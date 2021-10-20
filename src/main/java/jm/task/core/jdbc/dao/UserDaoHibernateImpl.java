@@ -24,7 +24,6 @@ public class UserDaoHibernateImpl implements UserDao {
         Transaction transaction = session.beginTransaction();
         try {
             session.createNativeQuery("CREATE TABLE IF NOT EXISTS hibernate" +
-
                     " (id mediumint not null auto_increment, name VARCHAR(50), " +
                     "lastname VARCHAR(50), " +
                     "age tinyint, " +
